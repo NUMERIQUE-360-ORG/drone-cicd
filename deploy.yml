@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cicddemo
+spec:
+  # externalIPs:
+  #       - 10.0.0.10
+  # type: ClusterIP
+  template:
+    metadata:
+      name: cicddemo
+    spec:
+      containers:
+      - name: cicddemo
+        image: cicddemo
+        imagePullPolicy: Never
+      restartPolicy: Never
+      ports:
+        - name: http
+          port: 3000
+          nodePort: 3000
+          targetPort: http
+          protocol: TCP

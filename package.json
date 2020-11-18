@@ -1,0 +1,21 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "description": "This is demo repo for testing cicd pipeline of CRM",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "../cicd-demo.git"
+  },
+  "keywords": [
+    "cicd",
+    "drone",
+    "node"
+  ],
+  "author": "Sachin Chavan <https://sachinsmc.me>",
+  "license": "ISC"
+}
